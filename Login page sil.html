@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="logis page sil.css">
+
+  <style>
+    body {
+       background: -webkit-linear-gradient(bottom, #095f42, #64c5a5);
+       background-repeat: no-repeat;
+    }
+
+      #card {
+        background: #135f3f;
+        border-radius: 8px;
+        box-shadow: 1px 2px 8px rgba(39, 39, 39, 0.65);
+        height: 410px;
+        margin: 6rem auto 8.1rem auto;
+        width: 329px;
+    }
+
+    #card-content {
+      padding: 12px 44px;
+}
+
+#card-title {
+      font-family: "Georgia", sans-serif;
+      letter-spacing: 4px;
+      padding-bottom: 23px;
+      padding-top: 13px;
+      text-align: center;
+}
+.underline-title {
+      background: -webkit-linear-gradient(right, #000000, #000000);
+      height: 2px;
+      margin: -1.1rem auto 0 auto;
+      width: 89px;
+}
+  </style>
+</head>
+
+<body>
+  <div id="card">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>LOGIN</h2>
+        <div class="underline-title"></div>
+      </div>
+      <form method="post" class="form">
+        <label for="user-email" style="padding-top:13px">
+            &nbsp;Email
+          </label>
+        <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+        <div class="form-border"></div>
+        <label for="user-password" style="padding-top:22px">&nbsp;Password
+          </label>
+        <input id="user-password" class="form-content" type="password" name="password" required />
+        <div class="form-border"></div>
+        <a href="#">
+          <legend id="forgot-pass">Forgot password?</legend>
+        </a>
+        <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
